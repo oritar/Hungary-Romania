@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מסע שורשים לרומניה - תוכנית משפחתית</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Heebo', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); }
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: white !important; }
+            .print-shadow-none { box-shadow: none !important; border: 1px solid #e5e7eb; }
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <nav class="glass-nav fixed w-full top-0 z-50 border-b border-slate-200 shadow-sm no-print">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-brand-900 flex items-center gap-2">
+                <i class="fa-solid fa-leaf text-brand-500"></i> מסע שורשים
+            </div>
+            <button onclick="window.print()" class="bg-brand-600 hover:bg-brand-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-print"></i> הדפסה / שמירה כ-PDF
+            </button>
+        </div>
+    </nav>
+
+    <header class="pt-24 pb-12 px-4 bg-gradient-to-br from-brand-900 to-brand-600 text-white text-center rounded-b-[3rem] shadow-lg mb-10 print-shadow-none">
+        <div class="max-w-3xl mx-auto">
+            <div class="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-semibold mb-4 backdrop-blur-sm">
+                <i class="fa-regular fa-calendar-days ml-1"></i> תוכנית 7 ימים
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">מסע שורשים משפחתי לרומניה</h1>
+            <p class="text-lg md:text-xl text-brand-50 opacity-90 max-w-2xl mx-auto">
+                מסע מרגש בעקבות ההיסטוריה המשפחתית, שילוב של מורשת, תרבות עשירה וטבע עוצר נשימה בחבל מרמורש.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 pb-20 space-y-8">
+        <section class="bg-white rounded-2xl shadow-md p-6 md:p-8 border border-slate-100 print-shadow-none">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="bg-brand-100 text-brand-600 w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold">1-4</div>
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-800">הנחיתה והדרך צפונה</h2>
+                    <p class="text-slate-500">📍 קלוז' נאפוקה והדרך לחבל מרמורש</p>
+                </div>
+            </div>
+            <p class="text-slate-600 mb-4">
+                הימים הראשונים יוקדשו לנחיתה, התארגנות על הרכב השכור, ותחילת הנסיעה צפונה אל עבר חבל מרמורש ההיסטורי. בדרך נהנה מהנופים הירוקים, העיירות הציוריות והטבע השופע של רומניה.
+            </p>
+            <div class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                <ul class="space-y-2 text-slate-700">
+                    <li><i class="fa-solid fa-plane-arrival text-brand-500 ml-2"></i> נחיתה והתמקמות.</li>
+                    <li><i class="fa-solid fa-car text-brand-500 ml-2"></i> נסיעה חווייתית בנופים הכפריים.</li>
+                    <li><i class="fa-solid fa-camera text-brand-500 ml-2"></i> עצירות בנקודות תצפית וטבע.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-md p-6 md:p-8 border border-slate-100 print-shadow-none page-break">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-amber-100 text-amber-600 w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold">5-7</div>
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-800">סיגט ומרמורש: מוקד מסע השורשים</h2>
+                    <p class="text-slate-500">📍 סיגט (Sighetu Marmației) והסביבה</p>
+                </div>
+            </div>
+            
+            <p class="text-slate-600 mb-6 text-lg">
+                שלושה ימים מלאים ומרגשים בסיגט להיכרות עמוקה עם חבל מרמורש, מסע השורשים האישי, ומוזיאונים ייחודיים שחובה לראות.
+            </p>
+
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-brand-900 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-landmark text-brand-500"></i> אטרקציות עיקריות בתוך סיגט:
+                </h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-brand-300 transition-colors">
+                        <strong class="text-slate-800 block mb-1">Memorial to the Victims of Communism</strong>
+                        <p class="text-sm text-slate-600">בית הכלא לשעבר שהפך למוזיאון - פיסת היסטוריה מרתקת, מצמררת וחשובה בקנה מידה אירופאי.</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-brand-300 transition-colors">
+                        <strong class="text-slate-800 block mb-1">בית אלי ויזל</strong>
+                        <p class="text-sm text-slate-600">מוזיאון לתרבות יהודית של מרמורש הממוקם בבית הולדתו של הסופר וחתן פרס נובל.</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-xl border border-blue-100 hover:border-brand-300 transition-colors">
+                        <strong class="text-slate-800 block mb-1"><i class="fa-solid fa-star-of-david text-brand-600 ml-1"></i> בית הכנסת של סיגט</strong>
+                        <p class="text-sm text-slate-600">ביקור מרגש בבית הכנסת (היחיד שנותר מתוך עשרות שהיו בעיר לפני השואה). שריד חשוב לחיים היהודיים התוססים.</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-xl border border-blue-100 hover:border-brand-300 transition-colors">
+                        <strong class="text-slate-800 block mb-1"><i class="fa-solid fa-book text-brand-600 ml-1"></i> בית הקברות היהודי</strong>
+                        <p class="text-sm text-slate-600">מקום מנוחתם של אלפי יהודי העיר מדורות קודמים. תחנה עוצמתית להתייחדות וחיפוש שורשים.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-amber-50 rounded-2xl p-6 border border-amber-100 mb-8">
+                <h3 class="text-xl font-bold text-amber-900 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-map-location-dot text-amber-600"></i> פנינים מחוץ לסיגט:
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-star text-amber-500 mt-1"></i>
+                        <div>
+                            <strong class="text-slate-800 text-lg">בית הקברות השמח בספנצה</strong>
+                            <p class="text-slate-600 text-sm mt-1">בית קברות ייחודי וצבעוני (כ-20 דקות מסיגט). מצבות עץ צבועות בכחול עם סיפורי חיים הומוריסטיים.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-church text-amber-500 mt-1"></i>
+                        <div>
+                            <strong class="text-slate-800">מנזר ברסאנה (Bârsana)</strong>
+                            <p class="text-slate-600 text-sm mt-1">קומפלקס פסטורלי של כנסיות עץ. אחד המקומות היפים ברומניה. <strong>חובה לבקר!</strong></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 py-8 text-center no-print">
+        <p class="mb-2">נסיעה טובה ומלאת חוויות וגילוי שורשים! 🌍🚗</p>
+        <p class="text-sm">נוצר במיוחד עבור הטיול המשפחתי</p>
+    </footer>
+
+</body>
+</html>
